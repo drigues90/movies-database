@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4 pt-5">
+      <img
+        [src]="loadImg(movie.poster_path)"
+        class="w-75 img-fluid rounded border"
+        alt="..."
+      />
+    </div>
+    <div class="col-8 pt-5">
+      <div class="col-6"></div>
+      <h1>{{ movie.title }}</h1>
+
+      <div class="d-flex">
+        <div class="p-1" *ngFor="let genre of movie.genres">
+          <span [class]="randomBg()" class="d-flex flex-row badge rounded">{{
+            genre.name
+          }}</span>
+        </div>
+      </div>
+
+      <div class="my-5">
+        <div>
+          <h6>Titulo original</h6>
+          <p>
+            {{ movie.original_title }}
+          </p>
+        </div>
+
+        <div>
+          <h6>Orçamento</h6>
+          <p>
+            {{ movie.budget | currency }}
+          </p>
+        </div>
+
+        <div>
+          <h6>Receita</h6>
+          <p>
+            {{ movie.revenue | currency}}
+          </p>
+        </div>
+      </div>
+
+      <h4>Sinopse</h4>
+      <p>{{ movie.overview }}</p>
+    </div>
+  </div>
+</div>

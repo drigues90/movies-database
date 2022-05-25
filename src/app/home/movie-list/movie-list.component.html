@@ -1,0 +1,16 @@
+<div class="row row-cols row-cols-md-5 p-4">
+  <div class="col mb-4" *ngFor="let m of movies">
+    <div class="card border-dark h-100">
+      <img [src]="loadImg(m.backdrop_path)" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{m.title}}</h5>
+        <div class="card-footer border-success bg-white">
+          <p class="card-text">
+            <small class="text-muted">Lançamento: {{m.release_date | date: 'longDate'}}</small>
+            <a [routerLink]="['movie-detail',m.id]" class="nav-link stretched-link"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
