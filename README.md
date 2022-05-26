@@ -1,27 +1,42 @@
-# MyMovies
+<h1 align="center">Welcome to Movies Database 👋</h1>
+<p>
+<a href="https://developers.themoviedb.org/3">
+  <img alt="Version" src="https://img.shields.io/badge/movie_database_api-3.0-blue.svg?cacheSeconds=2592000" />
+</a>
+  <img src="https://img.shields.io/badge/node-16.15-brightgreen" alt="version" />
+  <img src="https://img.shields.io/badge/angular-13.3-red" alt="angular" />
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+> Projeto de conceito de uma SPA visto no cuso de arquitetura de front-end na pucminas.br,
+com rotas,carregamento de componentes lazy,modularização da aplicação e integração com api externa.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### ✨ [Live Demo](https://drigues90.github.io/movies-database/home)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Install
 
-## Running unit tests
+```sh
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+```sh
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Run tests
 
-## Further help
+```sh
+npm run test
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
