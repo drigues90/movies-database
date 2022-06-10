@@ -1,17 +1,17 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-4 pt-5">
+    <div class="col-md-4 col-sm-12 pt-5">
       <img
         [src]="loadImg(movie.poster_path)"
-        class="w-75 img-fluid rounded border"
+        class="img-fluid rounded border"
         alt="..."
       />
     </div>
-    <div class="col-8 pt-5">
+    <div class="col-sm-12 col-md-8 pt-5 texto-centro">
       <div class="col-6"></div>
       <h1>{{ movie.title }}</h1>
 
-      <div class="d-flex">
+      <div class="d-flex movie-tag-centro">
         <div class="p-1" *ngFor="let genre of movie.genres">
           <span [class]="randomBg()" class="d-flex flex-row badge rounded">{{
             genre.name

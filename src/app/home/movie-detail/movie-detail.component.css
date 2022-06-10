@@ -1,0 +1,9 @@
+@media (max-width: 575.98px) {
+  .texto-centro {
+    text-align: center!important;
+  }
+
+  .movie-tag-centro {
+    justify-content: center;
+  }
+ }
